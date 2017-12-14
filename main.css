@@ -1,0 +1,73 @@
+:root{
+	
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	background-color: #1f1f1f;
+}
+
+.landing{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: inset 0 0 10px 4px rgba(10,10,10,0.8);
+	display: grid;
+	grid-template: repeat(5,20vh) / repeat(3,1fr);
+	color: #fff;
+	text-align: center;
+	z-index: 99;
+}
+
+.landing_title{
+	font-size: 20vh;
+	text-shadow: 0px 0px 10px #fff;
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+	line-height: 20vh;
+}
+.landing_desc{
+	font-size: 3vh;
+	text-shadow: 0px 0px 10px #fff;
+	grid-column: 2 / 3;
+	grid-row: 4 / 5;
+	line-height: 10vh;
+}
+
+.bg{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: radial-gradient(#fa5000 10%, #000000 90% );
+	background-size: 300vw;
+	animation: animBg 3s linear infinite;
+	z-index: 1;
+}
+
+@keyframes animBg{
+	0%{
+		background-position: 0% 0%;
+	}
+	33%{
+		background-position: 40% 72%;
+	}
+	50%{
+		background-position: 72% 40%;
+	}
+	70%{
+		background-position: 30% 10%;
+	}
+	100%{
+		background-position: 0% 0%;
+	}
+}
